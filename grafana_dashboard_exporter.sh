@@ -14,9 +14,7 @@ for dash in $(curl -sSL -k -H "Authorization: Bearer $KEY" $HOST/api/search\?que
     curl -sSL -k -H "Authorization: Bearer ${KEY}" "${HOST}/api/dashboards/${dash}" | jq '.dashboard.id = null' | jq '.dashboard' > "$EXPORT_DIR"/$(echo ${dash}|sed 's,db/,,g').json
 done
 
-for file in $(ls "$EXPORT_DIR"); do
-    cp "${EXPORT_FILE}/${file}" "${UPLOAD_DIR}/$(file)"
-done
+mv -f "${EXPORT_DIR}"/* "${UPLOAD_DIR}"
 
 rm -rf "$EXPORT_DIR"
 
