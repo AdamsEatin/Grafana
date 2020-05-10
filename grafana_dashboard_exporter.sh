@@ -1,4 +1,4 @@
-KEY=eyJrIjoiQXZKSE9vM043U1RyNFFtd1NjY0NsTHRSOGl3S0FaNlAiLCJuIjoiRGFzaGJvYXJkX0V4cG9ydGVyIiwiaWQiOjF9
+KEY=
 HOST="http://192.168.0.20:3000"
 GRAFANA_DIR="/etc/grafana/"
 UPLOAD_DIR="/etc/grafana/dashboards"
