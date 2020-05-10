@@ -1,0 +1,3 @@
+#Exclude ldap.toml and provisioning directory
+ldap.toml
+/provisioning/*
